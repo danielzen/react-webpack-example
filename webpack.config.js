@@ -8,7 +8,7 @@ module.exports = {
   ],
   output: {
     path: __dirname,
-    filename: 'app.js'
+    filename: '/static/js/bundle.js'
   },
   module: {
     target: 'node',
