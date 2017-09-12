@@ -17,17 +17,19 @@
     "webpack-dev-server": "^1.16.2"
   },
   "dependencies": {
-    "react": "^15.4.1",
-    "react-dom": "^15.4.1"
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4"
   },
   "scripts": {
-    "start": "webpack-dev-server"
+    "start": "open http://localhost:8080/webpack-dev-server/; webpack-dev-server"
   },
   "eslintConfig": {
-    "env" : {
-      "browser" : true,
-      "node" : true,
-      "es6" : true
+    "rules": {
+      "no-undef": "off",
+      "react/prefer-stateless-function": 0,
+      "jsx-a11y/image-has-alt": 0,
+      "prefer-template": 0,
+      "react/no-did-mount-set-state": 0
     },
     "parserOptions": {
       "sourceType": "module",
